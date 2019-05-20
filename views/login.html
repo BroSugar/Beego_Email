@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>管理后台 | 登录</title>
+
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="/static/css/animate.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+
+    <div class="middle-box text-center loginscreen animated fadeInDown">
+        <div>
+            <div>
+
+                <h1 class="logo-name">IN+</h1>
+
+            </div>
+            <h3>欢迎登录IN+管理后台</h3>
+            <p>作者GitHub(附项目源码)：<a  href="http://www.github.com/{{.Github}}">{{.Github}}</a></p>
+
+            <p>作者邮箱：<a class="email" href="mailto:{{.Email}}">{{.Email}}</a></p>
+
+            <p>完美设计和精确准备的管理主题，超过50页，提供额外的新Web应用程序视图。
+                <!--Continually expanded and constantly improved Inspinia Admin Them (IN+)-->
+            </p>
+            <p>登录到管理后台<a href="/login">{{.ErrorData}}</a></p>
+
+            <form class="m-t" role="form" action="/login" method="post">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="账号" required="" name="Username">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="密码" required="" name="Password">
+                </div>
+                <button type="submit" class="btn btn-primary block full-width m-b">登录</button>
+                <div class="author">
+
+
+                </div>
+                <a href="/static/login.html#"><small>忘记密码?</small></a>
+                <p class="text-muted text-center"><small>没有账号？</small></p>
+                <a class="btn btn-sm btn-white btn-block" href="/register">注册账号</a>
+            </form>
+        </div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="/static/js/jquery-2.1.1.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
