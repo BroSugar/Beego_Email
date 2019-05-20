@@ -13,7 +13,7 @@ import (
 
 var (
 	typecon="tcp"
-	Redisport="192.168.0.120:6379"
+	Redisport="redis IP地址"
 )
 
 

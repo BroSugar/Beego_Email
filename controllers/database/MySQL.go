@@ -16,11 +16,11 @@ import (
 *@Date:2019/5/1421:01
  */
 var (
-	dbhostsip  = "cdb-2dpvss9t.gz.tencentcdb.com"
-	dbusername = "laohei"
-	dbpassowrd = "Laohei123"
-	dbname     = "web_user_data"
-	port="10105"
+	dbhostsip  = "IP地址"
+	dbusername = "账号"
+	dbpassowrd = "密码"
+	dbname     = "数据库"
+	port="端口号"
 	DB_Driver=dbusername+":"+dbpassowrd+"@tcp("+dbhostsip+":"+port+")/"+dbname
 )
 type userlogin struct {
