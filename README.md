@@ -1,5 +1,5 @@
 # Beego_Email
-go语言beego框架实现简单增删改查业务
+go语言beego框架实现简单CRUD功能
 
 
 ### 云端实例：http://106.52.229.224
